@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+
+#face {
+    fill : #FFF;
+    stroke-width: 2px;
+    stroke: #000;
+}
+#hour, #min, #sec {
+    stroke-width: 1px;
+    fill: #333;
+    stroke: #555;
+}
+#sec {
+    stroke: #f55;
+}
