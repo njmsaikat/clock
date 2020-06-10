@@ -22,10 +22,10 @@ h1{
 }
 
 .digital-clock{
-    font-size: 80px;
+    font-size: 500%;
     color: #f3971b;
     border: 1px solid #f5f1f1;
-    padding: 0 5px 0 5px;
+    /* padding: 0 5px 0 5px; */
 }
 
 /* Layout */
