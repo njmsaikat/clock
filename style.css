@@ -9,6 +9,19 @@ h1{
     color: aqua;
 }
 
+/*Digital Clock Section*/
+
+.full-date{
+    font-size: 40px;
+}
+
+.digital-clock{
+    font-size: 80px;
+    color: #f3971b;
+    border: 1px solid #f5f1f1;
+    padding: 0 5px 0 5px;
+}
+
 /* Layout */
 .main {
     display: flex;
