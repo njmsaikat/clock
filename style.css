@@ -2,16 +2,60 @@ body{
     text-align: center;
 }
 
-#face {
-    fill : #FFF;
-    stroke-width: 2px;
+/* Layout */
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
     stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
 }
-#hour, #min, #sec {
-    stroke-width: 1px;
-    fill: #333;
-    stroke: #555;
+
+.mid-circle {
+    fill: #000;
 }
-#sec {
-    stroke: #f55;
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
 }
