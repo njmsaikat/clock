@@ -1,5 +1,12 @@
 body{
     text-align: center;
+    background-color: green;
+    position: relative;
+    min-height: 100vh;
+}
+
+h1{
+    color: aqua;
 }
 
 /* Layout */
@@ -19,8 +26,8 @@ body{
 /* Clock styles */
 .circle {
     fill: none;
-    stroke: #000;
-    stroke-width: 9;
+    stroke: rgb(114, 10, 10);
+    stroke-width: 15;
     stroke-miterlimit: 10;
 }
 
@@ -50,7 +57,7 @@ body{
 
 .second-arm {
     fill: none;
-    stroke: #000;
+    stroke: aquamarine;
     stroke-width: 4;
     stroke-miterlimit: 10;
 }
@@ -58,4 +65,35 @@ body{
 /* Transparent box ensuring arms center properly. */
 .sizing-box {
     fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+/*footer styling*/
+
+footer{
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #f5f1f1;  
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer a:hover{
+    color:skyblue;
 }
