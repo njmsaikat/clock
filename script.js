@@ -2,43 +2,32 @@ const HOURHAND = document.querySelector("#hour");
 const MINUTEHAND = document.querySelector("#minute");
 const SECONDHAND = document.querySelector("#second");
 
-let hrPosition = 10;
-let minPosition = 50;
-let secPosition = 80;
-
 var date = new Date();
-console.log(date);
+// console.log(date);
 
-var hr = date.getHours();
-var min = date.getMinutes();
-var sec = date.getSeconds();
-console.log("Hour: " + hr + " Minute: " + min + " Second: " + sec);
+let hr = date.getHours();
+let min = date.getMinutes();
+let sec = date.getSeconds();
+// console.log("Hour: " + hr + " Minute: " + min + " Second: " + sec);
 
+let hrPosition = (hr*360/12)+(min*(360/60)/12);
+let minPosition = (min*360/60)+(sec*(360/60)/60);
+let secPosition = sec*360/60;
 
-HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
-MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
-SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
+function runTheclock(){
 
+    hrPosition = hrPosition + (3/360);
+    minPosition = minPosition + (6/60);
+    secPosition = secPosition + 6;
 
-
-
-
-
-
-
-
-
-
+    HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
+    MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
+    SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
 
 
+}
 
-
-
-
-
-
-
-
+var interval = setInterval(runTheclock,1000);
 
 
 
@@ -67,17 +56,8 @@ function showTime(){
     document.getElementById("digitalClock").innerText = time;
     document.getElementById("digitalClock").textContent = time;
 
-    let today= new Date()
-
-    //Function To Convert Day Integer to String
-
-    function daysToSrting() {
-    const daysOfWeek = ['Sunday', 'Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    return daysOfWeek[today.getDay()]
-    }
-    var day = date;
-    document.getElementById("date").innerText = day;
-    document.getElementById("date").textContent = day;
+    document.getElementById("date").innerText = date;
+    document.getElementById("date").textContent = date;
 
     setTimeout(showTime,1000);
 
