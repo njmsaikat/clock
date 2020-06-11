@@ -30,6 +30,9 @@ h1{
     font-size: 500%;
     color: #f3971b;
     border: 1px solid #f5f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* padding: 0 5px 0 5px; */
 }
 
@@ -40,6 +43,9 @@ h1{
     height: 90vh;
     justify-content: center;
     align-items: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clockbox,
@@ -110,12 +116,15 @@ footer{
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-    background-color: #f5f1f1;  
+    background-color: #f5f1f1; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 footer a{
     text-decoration: none;
-    font-size: 20px;
+
 }
 
 footer a:hover{
