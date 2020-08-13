@@ -101,20 +101,4 @@ showTime();
 
 ```
 
-> Sample Landing Page
 
-![](items/clock_page.png)
-
-### _View this Website in Live -_
-
-https://njmsaikat.github.io/clock/
-
-> Contact With Developer:
-
-### Saikat Roy
-
-> Email: njmsaikat@gmail.com
-
-> Personal Portfolio: https://njmsaikat.github.io/saikat/
-
-> Linked In Profile: https://www.linkedin.com/in/njmsaikat/
