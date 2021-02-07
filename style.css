@@ -107,3 +107,24 @@ h1 {
 }
 /*footer styling*/
 
+footer {
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #f5f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: skyblue;
+}
+
