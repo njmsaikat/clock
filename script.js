@@ -55,3 +55,14 @@ function showTime(){
     document.getElementById("digitalClock").innerText = time;
     document.getElementById("digitalClock").textContent = time;
 
+    document.getElementById("date").innerText = date;
+    document.getElementById("date").textContent = date;
+
+    setTimeout(showTime,1000);
+
+
+}
+
+showTime();
+/*Digital clock part*/
+setClock();
