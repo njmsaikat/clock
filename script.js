@@ -44,6 +44,23 @@ function showTime(){
         hr = hr - 12;
         session = "PM";
     }
+    hr = (hr < 10) ? "0" + hr : hr;
+    min = (min < 10) ? "0" + min : min;
+    sec = (sec < 10) ? "0" + sec : sec;
+    var time = hr + ":" + min + ":" + sec + " " + session;
+    document.getElementById("digitalClock").innerText = time;
+    document.getElementById("digitalClock").textContent = time;
 
+    document.getElementById("date").innerText = date;
+    document.getElementById("date").textContent = date;
+
+    setTimeout(showTime,1000);
+
+
+}
+
+showTime();
+/*Digital clock part*/
+setClock();
 
 
