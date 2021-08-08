@@ -63,4 +63,4 @@ function showTime(){
 
 showTime();
 /*Digital clock part*/
-setClock();
+// setClock();
