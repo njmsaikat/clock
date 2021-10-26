@@ -115,6 +115,6 @@ https://njmsaikat.github.io/clock/
 
 > Email: njmsaikat@gmail.com
 
-> Personal Portfolio: https://njmsaikat.github.io/saikat/
+> Personal Portfolio: https://saikatroy.netlify.app/
 
 > Linked In Profile: https://www.linkedin.com/in/njmsaikat/
